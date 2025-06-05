@@ -4,6 +4,25 @@
 
 This Github provides getting started instructions for LoRaWAN Gateway HAT.
 
+### Features :
+
+## Getting Started with LoRaWAN Gateway HAT:
+
+### Hardware Overview :
+
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pinout.png" width="" height="">
+
+## Interfacing Details : 
+
+## Step 1 : Setup Raspberry Pi Headless for Easy Access and Interface configuration 
+- Checkout instructional guide [here]() to perform headless setup for remote access. After this step you should be able to login and access Raspberry remotely from other PC/Laptop by SSH using PuTTy or VNC tool.
+- After you log in, you need to configure the Raspberry Pi – enable SSH, SPI, I2C, etc. For this follow guide [here](https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/Documents/Interface%20Configuration%20of%20Raspberry%20Pi.pdf)
+- Now, you can proceed for further steps
+  
+## Step 2 : Setup concentrator module of Gateway  
+Here in this step will setup raspberry for configuring onboard concentrator LoRaWAN module model 
+Login to Raspberry Pi : 
+
 
 ## Related Products  
 
