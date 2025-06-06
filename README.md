@@ -100,6 +100,16 @@ For Example,
 
 Now save config, restart pack-forwarder and Reboot Pi once. After this proceed for Gateway Registration process on TTN Cloud server.
 
+### Step 2 : LoRaWAN Gateway Registration to TTN Server
+
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway1.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway2.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway3.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway4.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway5.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway6.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway7.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway8.png" width="" height=""> 
 
 
 ## Related Products  
