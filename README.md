@@ -81,8 +81,8 @@ Window will appear,
 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway7.png" width="480" height="298"> 
 
-Once you change any settings, make sure to restart the packet forwarder. To connect with ThingsNetworkSetup we need to set server and correct frequency 
-  -	Setup RAK Gateway Channel plan => TTN Server
+Once you change any settings, make sure to restart the packet forwarder. We need to set plan for particular server and operating frequency. 
+  -	Setup RAK Gateway Channel plan => TTN Server (for TheThingsNetwork)
   -	Also, Frequency plan as per your region, e.g US_902_928 for US region
     
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway8.png" width="885" height="548"> 
