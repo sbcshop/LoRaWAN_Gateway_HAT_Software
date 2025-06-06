@@ -28,12 +28,12 @@ This Github provides getting started instructions for LoRaWAN Gateway HAT.
 
 - Login to Raspberry Pi and follow below commands in sequence:
 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_login.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_login.png" width="490" height="286"> 
 
 ``` 
 $ sudo apt update && sudo apt upgrade -y
 ```
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway1.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway1.png" width="493" height="307"> 
 
 This command will update packages and wait for sometime depending on internet connection speed it will take a few minutes to complete.
 
@@ -60,13 +60,13 @@ From inside the folder install the packages, for our gateway we need to select o
 ```
 $ sudo ./install.sh
 ```
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway3.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway3.png" width="570" height="310"> 
 
 It will take some time depending on internet speed, when the installation is complete, you will see the following on your screen. Once done you will get a success message as shown below. Also you can type command to verify version,
 ```
 $ sudo gateway-version
 ```
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway5.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway5.png" width="504" height="168"> 
 
 For demo we plan to connect Gateway with TheThingsNetwork Cloud server so we will proceed to configure settings accordingly
 ```
@@ -79,17 +79,17 @@ To edit config files for Region, Service, Server address, etc.
 
 Window will appear,
 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway7.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway7.png" width="480" height="298"> 
 
 Once you change any settings, make sure to restart the packet forwarder. To connect with ThingsNetworkSetup we need to set server and correct frequency 
   -	Setup RAK Gateway Channel plan => TTN Server
   -	Also, Frequency plan as per your region, e.g US_902_928 for US region
     
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway8.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway8.png" width="885" height="548"> 
 
 Edit packet-forwarder config to change default Server Address that will correspond to your specific regions. This you can even get through TTN Cloud server under Gateway overview section.
 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway9.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway9.png" width="481" height="283"> 
 
 For Example,
 - US Regions => nam1.cloud.thethings.network
@@ -101,15 +101,27 @@ For Example,
 Now save config, restart pack-forwarder and Reboot Pi once. After this proceed for Gateway Registration process on TTN Cloud server.
 
 ### Step 2 : LoRaWAN Gateway Registration to TTN Server
+- Login to TheThingsNetwork Server and if not having account already then [sign up](https://www.thethingsnetwork.org/get-started) community edition for testing.
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway1.png" width="" height="">
 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway1.png" width="" height=""> 
+- Once login then select console > choose cluster (as per your region) 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway2.png" width="" height=""> 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway3.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway3.png" width="" height="">
+
+- Inside Gateway tab click Register Gateway, you will need Gateway EUI unique to every device which you can get with gateway-version command as shown.
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway4.png" width="" height=""> 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway5.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway5.png" width="" height="">
+
+- Give unique ID, name to your gateway and select correct frequency as per your region 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway6.png" width="" height=""> 
+
+- Now reboot your Raspberry Pi configured in previous steps, once ready it will automatically establish connection with TTN server which you can view and monitor live updates as shown below.
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway7.png" width="" height=""> 
-<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway8.png" width="" height=""> 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway8_live.png" width="" height="">
+
+- Even you can check end node join uplink if added to network via this gateway, checkout guide [here]() how to register end node. 
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway9_endnode_uplink.png" width="" height=""> 
+
 
 
 ## Related Products  
