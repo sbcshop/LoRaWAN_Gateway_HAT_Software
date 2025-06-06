@@ -2,16 +2,26 @@
 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/Features_banner.png" width="" height="">
 
+Transform your Raspberry Pi into a robust LoRaWAN Gateway with our versatile HAT supporting RAK5146 concentrator module. The RAK5146 is an LPWAN Concentrator Module in a mini-PCIe form factor, featuring the Semtech SX1303 and SX126X for the Listen Before Talk (LBT) feature, enabling seamless integration into existing routers or other network equipment with LPWAN Gateway capabilities. 
+With seamless communication between your Pi and LoRaWAN end node devices, this Gateway HAT supports multiple channels and global frequency bands, making it ideal for DIY IoT projects and rapid prototyping.
+
 This Github provides getting started instructions for LoRaWAN Gateway HAT.
 
 ### Features :
-
+- Raspberry Pi form factor with a 40-pin compatible header
+- Compatible with the Raspberry Pi 3 Model B+/Raspberry 4
+- Mini PCIe connector on board
+- Two Programmable buttons and LEDs for additional control features addon and status or alert indications.
+- SX1303 baseband processor emulates 8 x 8 channels LoRa packet detectors, 8x SF5-SF12 LoRa demodulators, 8x SF5-SF10 LoRa demodulators, one 125/250/500 kHz high-speed LoRa demodulator, and one (G)FSK demodulator
+- Supports global license-free frequency band: EU868, EU433, RU864, CN470, US915, AS923, AU915, KR920, and IN865
 
 ### Hardware Overview :
 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pinout.png" width="" height="">
 
 ## Interfacing Details : 
+
+<img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/interfacing_info.png" width="668" height="411">
 
 ## Getting Started with LoRaWAN Gateway HAT:
 ### Step 1 : Setup Raspberry Pi Headless for Easy Access and Interface configuration 
@@ -122,7 +132,11 @@ Now save config, restart pack-forwarder and Reboot Pi once. After this proceed f
 - Even you can check end node join uplink if added to network via this gateway, checkout guide [here]() how to register end node. 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway9_endnode_uplink.png" width="" height=""> 
 
-
+## Resources
+  * [Schematic](https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Hardware/blob/main/Design%20Data/LORAWAN_GATEWAY_HAT%20SCH.pdf)
+  * [Hardware Files](https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Hardware)
+  * [RAK5146 Reference ](https://docs.rakwireless.com/product-categories/wishat/rak2287-rak5146-pi-hat/datasheet/)
+  * [Getting Started with Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html)
 
 ## Related Products  
 
