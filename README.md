@@ -129,7 +129,7 @@ Now save config, restart pack-forwarder and Reboot Pi once. After this proceed f
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway7.png" width="" height=""> 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway8_live.png" width="" height="">
 
-- Even you can check end node join uplink if added to network via this gateway, checkout guide [here]() how to register end node. 
+- Even you can check end node join uplink if added to network via this gateway, checkout guide [here](https://github.com/sbcshop/LoRaWAN_Breakout_Software/blob/main/lorawan_application_TTN/readme.md#register-lorawan-endnode) how to register end node. 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/ttn_gateway9_endnode_uplink.png" width="" height=""> 
 
 ## Resources
