@@ -40,8 +40,8 @@ This Github provides getting started instructions for LoRaWAN Gateway HAT.
 
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_login.png" width="490" height="286"> 
 
-``` 
-$ sudo apt update && sudo apt upgrade -y
+```
+sudo apt update && sudo apt upgrade -y
 ```
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway1.png" width="493" height="307"> 
 
@@ -49,38 +49,38 @@ This command will update packages and wait for sometime depending on internet co
 
 Before moving for next command check if git already available in Raspberry Pi,
 ```
-$ git --version
+git --version
 ```
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway2.png" width="" height=""> 
 
 If not present then install with below command,
 ``` 
-$ sudo apt install git
+sudo apt install git
 ```
 
 Now download packages for onboard rak5146 concentrator module of Gateway,
 ```
-$ git clone https://github.com/RAKWireless/rak_common_for_gateway.git ~/rak_common_for_gateway
+git clone https://github.com/RAKWireless/rak_common_for_gateway.git ~/rak_common_for_gateway
 ```
 ```
-$ cd ~/rak_common_for_gateway
+cd ~/rak_common_for_gateway
 ```
 
 From inside the folder install the packages, for our gateway we need to select option 11. In case facing any issue do fresh installation with option 12,
 ```
-$ sudo ./install.sh
+sudo ./install.sh
 ```
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway3.png" width="570" height="310"> 
 
 It will take some time depending on internet speed, when the installation is complete, you will see the following on your screen. Once done you will get a success message as shown below. Also you can type command to verify version,
 ```
-$ sudo gateway-version
+sudo gateway-version
 ```
 <img src="https://github.com/sbcshop/LoRaWAN_Gateway_HAT_Software/blob/main/images/pi_lorawan_gateway5.png" width="504" height="168"> 
 
 For demo we plan to connect Gateway with TheThingsNetwork Cloud server so we will proceed to configure settings accordingly
 ```
-$ sudo gateway-config
+sudo gateway-config
 ```
 
 To edit config files for Region, Service, Server address, etc.
